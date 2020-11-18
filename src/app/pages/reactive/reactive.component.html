@@ -94,7 +94,7 @@
           </tr>
         </thead>
         <tbody formArrayName="hobbies">
-          <tr *ngFor="let hobby of form.get('hobbies').controls; let idx = index">
+          <tr *ngFor="let hobby of hobbiesFromForm.controls; let idx = index">
             <th scope="row">{{ idx + 1}}</th>
             <td>
               <input  type="text" 

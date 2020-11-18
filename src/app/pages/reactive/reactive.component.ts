@@ -28,6 +28,9 @@ export class ReactiveComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  get hobbiesFromForm(){
+    return this.form.get('hobbies') as FormArray;
+  }
 
   fieldIsInvalid(field:string):boolean{
     return this.form.get(field).invalid && this.form.get(field).touched;
